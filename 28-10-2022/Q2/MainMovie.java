@@ -11,32 +11,18 @@ class Movie{
 	 String movieStartTime,movieEndTime;
 	 int MovieTicketPrice;
 
-	public void set_moviename(String m){
+	public void set_movie(String m,String mst,String met,int mtp){
 		movieName=m;
-	}
-	public void set_moviestarttime(String m){
-		movieStartTime=m;
-	}
-	public void set_movieendtime(String m){
-		movieEndTime=m;
-	}
-	public void set_movieticketprice(int m){
-		MovieTicketPrice=m;
+		movieStartTime=mst;
+		movieEndTime=met;
+		MovieTicketPrice=mtp;
 	}
 	
 	
-	public String get_moviename(){
-		return movieName;
+	public void get_movie(){
+		System.out.println("Movie Name:"+movieName+"\nMovie Start Time"+movieStartTime+"\nMovie End Time:"+movieEndTime+"\nMovie Price Ticket:"+MovieTicketPrice);
 	}
-	public String get_moviestarttime(){
-		return movieStartTime;
-	}
-	public String get_movieendtime(){
-		return movieEndTime;
-	}
-	public int get_movieticketprice(){
-		return MovieTicketPrice;
-	}
+	
 	
 	
 }
@@ -47,19 +33,9 @@ public class MainMovie {
 
 		Movie obj=new Movie( );
 		
-		obj.set_moviename("tha");
+		obj.set_movie("tha","1:00 Pm","3:00 Pm",200);
 		
-		obj.set_moviestarttime("1:00 Pm");
-		
-		obj.set_movieendtime("3:00 Pm");
-		
-		obj.set_movieticketprice(200);
-		
-		System.out.println("Movie Name: "+obj.get_moviename());
-		System.out.println("Movie Start Time: "+obj.get_moviestarttime());
-		System.out.println("Movie End Time: "+obj.get_movieendtime());
-		System.out.println("Movie Price Ticket: "+obj.get_movieticketprice());
-		
+		obj.get_movie();
 	}
 
 }
