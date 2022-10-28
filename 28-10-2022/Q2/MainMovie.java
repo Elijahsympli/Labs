@@ -55,10 +55,10 @@ public class MainMovie {
 		
 		obj.set_movieticketprice(200);
 		
-		System.out.println("Movie Name:-"+obj.get_moviename());
-		System.out.println("Movie Start Time:-"+obj.get_moviestarttime());
-		System.out.println("Movie End Time:-"+obj.get_movieendtime());
-		System.out.println("Movie Price Ticket-:"+obj.get_movieticketprice());
+		System.out.println("Movie Name: "+obj.get_moviename());
+		System.out.println("Movie Start Time: "+obj.get_moviestarttime());
+		System.out.println("Movie End Time: "+obj.get_movieendtime());
+		System.out.println("Movie Price Ticket: "+obj.get_movieticketprice());
 		
 	}
 
