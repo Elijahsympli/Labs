@@ -20,7 +20,7 @@ public class DuplicateArrayELe {
 			  }
 			  }
 			  for(int k=0;k<c.length;k++) {
-			  for(int j=k-1;j>0;j--)
+			  for(int j=k-1;j>=0;j--)
 			  if(c[k]==c[j]) {
 				  l=1;
 				  break;
