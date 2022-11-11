@@ -67,7 +67,7 @@ String lowercase(String st)
 		System.out.println("Reversing the entire string '"+sbff+"':\n"+sbff.reverse());
 		sbff.reverse();
 		System.out.println("Replacing the word Buffer with Builder :\n"+sbff.replace(14,20,"Builder"));
-		StringTokenizer sk1=new StringTokenizer("C:\\IBM||DB2||PROGRAM\\DB2COPY1.EXE");
+		/*StringTokenizer sk1=new StringTokenizer("C:\\IBM||DB2||PROGRAM\\DB2COPY1.EXE");
 
 		StringTokenizer sk3=new StringTokenizer("Drive:|Folder:|File:");
 		while(sk3.hasMoreTokens() && sk1.hasMoreTokens()) {//boolean method its check if there is more token available or not
@@ -76,7 +76,10 @@ String lowercase(String st)
 			
 				System.out.println(sk1.nextToken("\\"));
 			
-			}
-		
+			}*/
+		StringBuilder str1=new StringBuilder("C:\\IBM||DB2||PROGRAM\\DB2COPY1.EXE");
+		System.out.println("Drive:"+str1.substring(0,3));
+		System.out.println("Folder:"+str1.substring(3, 6).concat("||")+str1.substring(7, 10).concat("||")+str1.substring(11,18));
+				System.out.println("File:"+str1.substring(21));
 }
 }
