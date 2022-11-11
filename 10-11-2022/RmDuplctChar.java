@@ -10,21 +10,21 @@ import java.util.Scanner;
 public class RmDuplctChar {
 public static void main(String args[]) {
 	StringBuffer nstr=null;
-	StringBuffer s=new StringBuffer("Anudip Foundation Skill & carreer developement centre ");
+	StringBuffer s=new StringBuffer("Anudip Foundation Skill & career development centre ");
 	//Scanner sc=new Scanner(System.in);
 	//String str=sc.next();
 	String str="Famous";
 	System.out.println("The given String is:"+s);
-
+	
 	System.out.println("The given mask string is -"+str);
 	int p;
+	
 	for(int j=0;j<s.length();j++) {
 		p=j;
 		for(int i=0;i<str.length();i++) {
-			
-			if(s.charAt(j)==str.charAt(i)) {
-				nstr=	s.delete(j, p+1);
-			}}}
-	
+			if(Character.toLowerCase(s.charAt(j))==Character.toLowerCase(str.charAt(i))) 
+					s.delete(j, p+1);
+					}}
+	nstr=s;
 System.out.println("After removing duplicate characters from a given string the new string is:\n "+nstr);
 }}
