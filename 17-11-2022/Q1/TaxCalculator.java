@@ -11,23 +11,23 @@ public class TaxCalculator {
 			throw new EmployeeNameInvalidException("\n"+"Test Case:" +i +"\n"+ "Employee Name:"+empName+"\n"+"Employee Salary:"+empSal+"\n "+"Is Indian:"+isIndian+"\n "+"Expected message" +"The employee name cannot be empty");
 			
 	}
-	else if (empSal>100000	&& isIndian==true) {
+	else if (empSal>=100000	&& isIndian==true) {
 	taxAmount=empSal*8/100;
-	System.out.println("\n"+"Test Case:" +i +"\n"+ "Employee Name:"+empName+"\n"+"Employee Salary:"+empSal+"\n "+"Is Indian:"+isIndian+"\n "+"Expected message:" + taxAmount);
+	System.out.print("\n"+"Test Case:" +i +"\n"+ "Employee Name:"+empName+"\n"+"Employee Salary:"+empSal+"\n "+"Is Indian:"+isIndian+"\n "+"Expected message:" );
 	}
 else if(empSal<100000 && empSal>=50000 && isIndian==true) {
 	taxAmount=empSal*6/100;
-	System.out.println("\n"+"Test Case:" +i +"\n"+ "Employee Name:"+empName+"\n"+"Employee Salary:"+empSal+"\n "+"Is Indian:"+isIndian+"\n "+"Expected message:" + taxAmount);
+	System.out.print("\n"+"Test Case:" +i +"\n"+ "Employee Name:"+empName+"\n"+"Employee Salary:"+empSal+"\n "+"Is Indian:"+isIndian+"\n "+"Expected message:");
 }
 else if(empSal<50000 && empSal>=30000 && isIndian==true)
 {
 	taxAmount=empSal*5/100;
-	System.out.println("\n"+"Test Case:" +i +"\n"+ "Employee Name:"+empName+"\n"+"Employee Salary:"+empSal+"\n "+"Is Indian:"+isIndian+"\n "+"Expected message:" + taxAmount);
+	System.out.print("\n"+"Test Case:" +i +"\n"+ "Employee Name:"+empName+"\n"+"Employee Salary:"+empSal+"\n "+"Is Indian:"+isIndian+"\n "+"Expected message:");
 }
 else if(empSal<30000 && empSal>=10000 && isIndian==true)
 {
 	taxAmount=empSal*4/100;
-	System.out.println("\n"+"Test Case:" +i +"\n"+ "Employee Name:"+empName+"\n"+"Employee Salary:"+empSal+"\n "+"Is Indian:"+isIndian+"\n "+"Expected message:" + taxAmount);
+	System.out.print("\n"+"Test Case:" +i +"\n"+ "Employee Name:"+empName+"\n"+"Employee Salary:"+empSal+"\n "+"Is Indian:"+isIndian+"\n "+"Expected message:");
 }
 else {
 	
