@@ -25,10 +25,10 @@ public class ExceptionNegativeNo {
 			
 			
 		else 
-			throw new NegativeNumber(" x and y should not be zero.");
+			throw new NegativeNumber(" x and y should not be zero or Both numbers should not be negative.");
 		
 	}
 		public static void main(String[] args) throws NegativeNumber {
-			new ExceptionNegativeNo().checkage(1,21);
+			new ExceptionNegativeNo().checkage(-1,-1);
 		}
 }
