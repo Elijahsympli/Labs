@@ -16,16 +16,19 @@ class NegativeNumber extends Exception{
 	}
 }
 public class ExceptionNegativeNo {
-	int x,y;
+	
 	public void checkage(int x,int y)throws NegativeNumber{
-		this.x=x;
-		this.y=y;
-		if(-20<=x && y<=20) 
-			throw new NegativeNumber("NegativeNumber");
+		
+		if(  (x!=0  && y>0 &&y<=20 &&-20<=x) || (x>0 && y<=20 && y!=0))  
+			
+			System.out.println("Product:"+(x*y));
+			
+			
 		else 
-			System.out.println("java.lang.Exception: x and y should not be zero.");
+			throw new NegativeNumber(" x and y should not be zero.");
+		
 	}
 		public static void main(String[] args) throws NegativeNumber {
-			new ExceptionNegativeNo().checkage(-7,2);
+			new ExceptionNegativeNo().checkage(1,21);
 		}
 }
