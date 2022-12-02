@@ -10,7 +10,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Scanner;
 
-public class Q2File {
+public class Q2F{
 	public static void main(String args[]) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter 1 to read the data from console and store it in file\n     OR    \n enter 2 to print the data from the file");
