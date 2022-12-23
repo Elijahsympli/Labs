@@ -30,7 +30,7 @@ insert into movie values(1,'A02','Bloody','JC',181),
 insert into customer1 values(null,'Vanda','Tay','LU',7560379);#primary key can't be null
 insert into movie values(null,'A02','Bledy','JC',188);#primary key can't be null
 #3. Prove that referential integrity constraint is ensured by both the tables.
-
+drop table customer1;#cannot drop table 'customer1' referenced by a foreign key constraint 'movie_ibfk_1' on table 'movie'
 #4. Prove that domain integrity constraint is ensured by the Movie table.
 
 #5. Display the movie titles, whose price is greater than 100 but less than 200.
